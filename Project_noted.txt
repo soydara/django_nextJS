@@ -1,0 +1,64 @@
+
+
+
+1. Install Django && Virtual ENV in Backend folder:
+	+ Install Virtual ENV:
+		- Install Virtual ENV: # pip install virtualenv or # virtualenv
+		- Activate ENV: go to folder venv\Scripts\activate
+	
+	+ Install Django:
+		# 
+	
+	+ Install Django Rest Framework:
+		# pip install djangorestframework
+	
+	+ Install Django App:
+		# python manage.py startapp campaigns
+	
+	+ Install Cloudinary for store image,media on Cloud storage
+		# pip install cloudinary
+		+ Register account: https://cloudinary.com/
+			- Cloud Name: dp5yvieoh
+			- API Key: 874817934559941
+			- API Secret: eAf_lky09SezWT_lG4Yk1WxS0F0
+			- API Environment variable: CLOUDINARY_URL=cloudinary://874817934559941:eAf_lky09SezWT_lG4Yk1WxS0F0@dp5yvieoh
+		+ settings.py
+			- Code:
+				import cloudinary
+				import os
+
+				cloudinary.config(
+					cloud_name=os.environ.get('ClOUD_NAME'),
+					api_key=os.environ.get('CLOUD_API_KEY'),
+					api_secret=os.environ.get('CLOUD_API_SECRET')
+				)
+				
+			
+		+ Create file .env
+			- Code:
+				export ClOUD_NAME=Dara
+				export CLOUD_API_KEY=
+				export CLOUD_API_SECRET=
+		+ Create file .env.bat
+			- Code:
+				export ClOUD_NAME=Dara
+				export CLOUD_API_KEY=
+				export CLOUD_API_SECRET=
+			# call .env.bat
+			
+2. 	Migration Modal: # python manage.py makemigrations
+			
+3. 	Create Super User: # python manage.py createsuperuser			
+			
+4. 	Install drf yasg (Generate real Swagger/OpenAPI 2.0): # pip install -U drf-yasg
+		- INSTALLED_APPS = ['drf_yasg']
+		- URL: https://drf-yasg.readthedocs.io/en/stable/readme.html#drf-yasg-yet-another-swagger-generator
+			
+			
+5.	Install NextJS: # npx create-next-app . (mean that install in folder name project directory)
+6.	Run Project: # yarn dev	or # npm run dev # npm start
+7. 	Install merriweather sans 
+			
+			
+* Frontend: https://github.com/CryceTruly/sm-next
+* Backend: 	https://github.com/CryceTruly/campaign-manager-api		
