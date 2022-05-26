@@ -6,7 +6,7 @@ from .models import Campaign, Subscriber
 class CampaignModelAdmin(admin.ModelAdmin):
     list_display = ('title', 'created_at', 'updated_at')
     search_fields = ('title', 'description')
-    list_per_page = 1
+    list_per_page = 10
 
 
 # custom show list data in admin panel
