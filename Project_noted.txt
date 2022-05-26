@@ -57,7 +57,7 @@
 			
 5.	Install NextJS: # npx create-next-app . (mean that install in folder name project directory)
 6.	Run Project: # yarn dev	or # npm run dev # npm start
-7. 	Install merriweather sans 
+7. 	Install dateformat # npm i dateformat
 			
 			
 * Frontend: https://github.com/CryceTruly/sm-next
