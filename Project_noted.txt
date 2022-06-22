@@ -3,7 +3,7 @@
 
 1. Install Django && Virtual ENV in Backend folder:
 	+ Install Virtual ENV:
-		- Install Virtual ENV: # pip install virtualenv or # virtualenv
+		- Install Virtual ENV: # pip install virtualenv or # virtualenv or # py -m venv env
 		- Activate ENV: go to folder venv\Scripts\activate
 	
 	+ Install Django:
